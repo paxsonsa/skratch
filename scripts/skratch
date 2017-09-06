@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+""" skratch
+Tool for Managing your scratch files.
+
+Author: Andrew Paxson
+Created: 2017-09-06
+"""
