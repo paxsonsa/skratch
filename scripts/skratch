@@ -6,3 +6,18 @@ Tool for Managing your scratch files.
 Author: Andrew Paxson
 Created: 2017-09-06
 """
+import sys
+
+print sys.path
+print sys.executable
+
+import skratchlib
+
+def main():
+    settings = skratchlib.SettingData()
+    parser = skratchlib.cli_parser(settings)
+    space = parser.parse_args(sys.argv[1:])
+    space.func(space)
+
+if __name__ == '__main__':
+    main()
